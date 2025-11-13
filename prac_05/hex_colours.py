@@ -1,5 +1,14 @@
 
 #Dictionary of basic color and their corresponding hex codes
-COLOUR_CODES = {"Black": "#000000", "White": "#ffffff", "Red": "#ff0000", "Green": "#008000",
-"Blue": "#0000ff", "Yellow": "#ffff00", "Cyan": "#00ffff", "Magenta": "#ff00ff", "Gray": "#808080",
-"Orange": "#ffa500"}
+COLOUR_CODES = {"BLACK": "#000000", "WHITE": "#ffffff", "RED": "#ff0000", "GREEN": "#008000",
+"BLUE": "#0000ff", "YELLOW": "#ffff00", "CYAN": "#00ffff", "MAGENTA": "#ff00ff", "GRAY": "#808080",
+"ORANGE": "#ffa500"}
+
+colour = input("Enter a basic colour:").upper()
+while colour != "":
+    if colour in COLOUR_CODES:
+        print(f"{colour} code is {COLOUR_CODES[colour]}")
+    else:
+        print("Invalid colour name. Try again.")
+    colour = input("Enter a basic colour:").upper()
+
