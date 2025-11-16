@@ -1,0 +1,24 @@
+BoxLayout:
+    orientation: "vertical"
+
+    BoxLayout:
+        orientation: "horizontal"
+        Button:
+            text: "Up"
+            on_press: app.handle_increment(1)
+        TextInput:
+            id: input_miles
+            text: "0"
+            multiline: False
+            input_filter: "float"
+            font_size: 32
+
+        Button:
+            text: "Down"
+            on_press: app.handle_increment(-1)
+    Label:
+        id: output_label
+        text: "0.0"
+        font_size: 32
+        color: 1, 1, 0, 1   # yellow
+
